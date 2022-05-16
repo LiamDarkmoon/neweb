@@ -1,0 +1,59 @@
+
+body {
+	background-color: #5f4b8b;
+	text-align: center;
+	background-image: url("fondo.jpg");
+}
+
+header {
+	font-size: 50px;
+	background-color: gold;
+	color: #5f4b8b;
+}
+
+h1 {
+	color:gold;
+	font-size: 40px
+}
+
+div {
+	color: gold;
+	font-style: bold;
+	font-size: 30px;
+}
+a:link,a:visited {
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	color: black;
+	border: 1px solid gold;
+}
+a:hover {
+	background-color: gold;
+}
+
+section div{
+	background-color: #5f4b8b;
+}
+section li {
+  list-style: none;
+  color: black;
+  height: 30px;
+  border: 1px solid white;
+  display: block;
+  margin: 5px;
+  margin-left: 500px;
+  margin-right: 500px
+}
+	li:nth-child(odd):hover {
+	background-color: #5f4b8b;
+	color: gold;
+}
+li:hover {
+	background-color: gold;
+	color: #5f4b8b;
+}
+
+footer {
+	font-size: 12px;	
+}
