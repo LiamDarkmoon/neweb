@@ -1,0 +1,48 @@
+
+body {
+	color: black;
+	font-size: 16px;
+	background: url("fd.jpg");
+	font-family: 'Syne', sans-serif;
+}
+
+/**HEADER**/
+#header-nav {
+	background-image: url("fondo.jpg");
+}
+
+#logo-img {
+	background-image: url("logoo.png");
+	width: 212px;
+	height: 150px;
+}
+
+#nav-list {
+	font-size: 1.25em; 
+}
+
+#phone {
+	font-size: 1.25em;
+}
+
+.navbar-brand {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar-brand h1 {
+	color: gold;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 3px 3px 3px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+
+.navbar-brand a {
+	text-decoration: none;
+}
+
+@media (max-width: -width: )

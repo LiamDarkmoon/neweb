@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html id="main">
-<link rel="stylesheet" type="text/css" href="style.css">
+
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mitekudasai</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header>Mitekudasai Tandil</header>
-<h1>Tienda Otaku</h1>	
-<div>Catalogo:</div>
-	<a href="https://www.instagram.com/mitekudasai.tandil/" target="_blank" title="visita nuestro instagram"> ¡visita nuestro instagram!</a>
-<section id="remeras"> 
-	<div>REMERAS:</div> 
-		<ul>
-			<li>remera 1 <img src=""></li>
-			<li>ramera 2 <img src=""></li>
-			<li>remera 3 <img src=""></li>
-			<li>remera 4 <img src=""></li>
-			<li>remera 5 <img src=""></li>
-		</ul>
-</section>
-<section id="buzos"> 
-	<div>BUZOS:</div>
-		<ul>
-			<li>buzo 1</li>
-			<li>buzo 2</li>
-			<li>buzo 3</li>
-		</ul>
-</section>
-</body>
-<footer>Mitekudasai Tandil Bs As Argentina 2022&copy; Copyright </footer>
+	<header>
+		<nav id="header-nav" class="navbar sticky-top navbar-expand-sm bg-dark">
+			<div class="container-fluid" style="margin-left: 0;">
+					<a href="index.html" class="navbar-brand mx-sm-auto">
+						<img src="logoo.png" alt="Mitekudasai logo" width="212" height="150">
+					</a>
+					<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"	>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul id="nav-list" class="navbar-nav me-auto mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+							</li>
+							<li class="nav-item dropdown">
+          			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+          				role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            			Productos
+          			</a>
+          			<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            			<li><a class="dropdown-item" href="#">Action</a></li>
+            			<li><a class="dropdown-item" href="#">Another action</a></li>
+            			<li><a class="dropdown-item" href="#">Something else here</a></li>
+         				</ul>
+        			</li>
+        			<li class="nav-item">
+								<a class="nav-link" href="#">Contacto</a>
+							</li>
+						</ul>
+						<button class="btn btn-sm btn-outline-secondary me-2" type="button" style="margin-bottom: 2px"><a class="nav-link d-sm-none d-md-none d-lg-inline" href="tel:2494529625" id="phone"><i class="bi bi-telephone"></i>2494529625</a></button>	
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button  class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+			</div>
+		</nav>
+	</header>
+		
+	<script src="js/jquery-3.6.0.slim.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>	
 </html>
