@@ -2,19 +2,22 @@
 body {
 	color: black;
 	font-size: 16px;
-	background: url("fd.jpg");
+	background: url("../img/fd.jpg") round;
 	font-family: 'Syne', sans-serif;
+}
+
+li {
+	text-decoration: none;
+}
+
+footer {
+	background: red;
+	float: bottom;
 }
 
 /**HEADER**/
 #header-nav {
 	background-image: url("fondo.jpg");
-}
-
-#logo-img {
-	background-image: url("logoo.png");
-	width: 212px;
-	height: 150px;
 }
 
 #nav-list {
@@ -45,4 +48,17 @@ body {
 	text-decoration: none;
 }
 
-@media (max-width: -width: )
+@media (min-width: 576px)  {
+	#phone {
+		margin-bottom: 3px;
+	}
+}
+
+/**CONTENT**/
+div  a {
+	text-decoration: none;
+	color: black;
+}
+div p {
+	margin-bottom: 3px;
+}
