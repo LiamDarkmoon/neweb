@@ -1,127 +1,344 @@
 <!DOCTYPE html>
 <html id="main">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mitekudasai</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mitekudasai</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar fixed-top navbar-expand-sm">
+        <div class="container-fluid" style="margin-left: 0">
+          <a href="index.html" class="navbar-brand mx-sm-auto">
+            <img
+              src="../img/logoo.png"
+              alt="Mitekudasai logo"
+              width="80"
+              height="57"
+            />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul id="nav-list" class="navbar-nav me-auto ms-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Remeras</a></li>
+                  <li><a class="dropdown-item" href="#">Buzos</a></li>
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contacto</a>
+              </li>
+            </ul>
+            <button id="phone" class="btn btn-sm btn-outline-warning me-2" type="button">
+              <a
+                class="nav-link d-sm-none d-md-none d-lg-inline"
+                href="https://api.whatsapp.com/send?phone=2494529625&text=Hola, Nececito mas informacion!" target="_blank"
+                ><i class="bi bi-whatsapp"></i> whatsapp </a>
+            </button>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning me-1" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+              <button id="phone" class="btn btn-sm btn-outline-warning me-1" type="button">
+                <a
+                  class="nav-link d-sm-none d-md-none d-lg-inline"
+                  href="#" target="_blank"
+                  ><i class="bi bi-person-check-fill"></i></a>
+              </button>
+              <button id="phone" class="btn btn-sm btn-outline-warning me-1" type="button">
+                <a
+                  class="nav-link d-sm-none d-md-none d-lg-inline"
+                  href="#" target="_blank"
+                  >
+                  <i class="bi bi-cart-check-fill"></i></a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<body>
-	<header>
-		<nav id="header-nav" class="navbar fixed-top navbar-expand-sm bg-dark">
-			<div class="container-fluid" style="margin-left: 0;">
-					<a href="index.html" class="navbar-brand mx-sm-auto">
-						<img src="logoo.png" alt="Mitekudasai logo" width="80" height="57">
-					</a>
-					<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"	>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNavDropdown">
-						<ul id="nav-list" class="navbar-nav me-auto ms-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Inicio</a>
-							</li>
-							<li class="nav-item dropdown">
-          			<a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
-          				role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            			Productos
-          			</a>
-          			<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            			<li><a class="dropdown-item" href="#">Action</a></li>
-            			<li><a class="dropdown-item" href="#">Another action</a></li>
-            			<li><a class="dropdown-item" href="#">Something else here</a></li>
-         				</ul>
-        			</li>
-        			<li class="nav-item">
-								<a class="nav-link active" href="#">Contacto</a>
-							</li>
-						</ul>
-						<button class="btn btn-sm btn-outline-secondary me-2" type="button"><a class="nav-link d-sm-none d-md-none d-lg-inline" href="tel:2494529625" id="phone"><i class="bi bi-telephone"></i>2494529625</a></button>	
-						<form class="d-flex" role="search">
-							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-							<button  class="btn btn-outline-success" type="submit">Search</button>
-						</form>
-					</div>
-			</div>
-		</nav>
-	</header>
-
-<div class="container">
-	<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner justify-content-center">
-    <div class="carousel-item active">
-      <img src="logoo.png" class="d-block w-100" alt="Remera Naruto">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Remeras</h5>
-        <p>Algodon premium, estampa en serigrafia</p>
+    <div class="container">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner justify-content-center">
+          <div class="carousel-item active">
+            <img src="../img/logoo.png" class="d-block w-100" alt="Remera Naruto" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Remeras</h5>
+              <p>Algodon premium, estampa en serigrafia</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/logoo.png" class="d-block w-100" alt="Buzo Eren" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Buzos</h5>
+              <p>Algodon premium con frizza</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/logoo.png" class="d-block w-100" alt="Buzo Nezuko" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Accesorios</h5>
+              <p>sentite parte del mundo anime</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="logoo.png" class="d-block w-100" alt="Buzo Eren">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Buzos</h5>
-        <p>Algodon premium con frizza</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="logoo.png" class="d-block w-100" alt="Buzo Nezuko">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Accesorios</h5>
-        <p>sentite parte del mundo anime</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-	</div>
-</div>
 
-	<footer class="container-fluid pb-auto bg-dark">
-		<div class="row">
-			<div style="font: 1.5em bold;" class="col-lg-3 col-md-3 mb-1 ms-1 pt-3">Navegacion:</div>
-			<div style="font: 1.5em bold;" class="col-lg-3 col-md-3 mb-1 ms-1 pt-3">Medios de pago:</div>
-			<div style="font: 1.5em bold;" class="col-lg-3 col-md-3 mb-1 ms-1 pt-3">Encontranos en:</div>
-			<div style="font: 1.5em bold;" class="col-lg-2 col-md-2 mb-1 ms-1 pt-3">Tuky</div>
-				<div class="col-lg-3 col-md-3 mb-0 ms-1">
-					<p>Targetas de Debito-Credito</p>
-					<p>Cuenta DNI</p>
-					<p>Uala</p>
-				</div>
-				<div class="col-lg-3 col-md-3 mb-0 ms-1">
-					<p>Targetas de Debito-Credito</p>
-					<p>Cuenta DNI</p>
-					<p>Uala</p>
-				</div>
-				<div class="col-lg-3 col-md-3 mb-0 ms-1">
-					<a class="d-block" href="https://www.facebook.com/profile.php?id=100069642704426" target="-blank">FACEBOOK</a>
-					<a href="https://www.instagram.com/mitekudasai.tandil/" target="-blank">INSTAGRAM</a>
-					<a href=""></a>
-				</div>
-				<div style="height: 5px;"></div>
-		</div>
-	</footer>
-		
-	<script src="js/jquery-3.6.0.slim.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/script.js"></script>
-</body>	
+    <div class="container-fluid mb-3">
+      <div class="row row-cols-1 row-cols-md-3 text-center g-4">
+        <div class="col">
+          <div class="card">
+            <img src="../img/remera1.jpg" class="card-img-top" alt="Remera Nana">
+            <div class="card-body">
+              <h5 class="card-title">Remera: Nana</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/remera2.jpg" class="card-img-top" alt="Remera Yuuji">
+            <div class="card-body">
+              <h5 class="card-title">Remera: Yuuji Itadori</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/remera3.jpg" class="card-img-top" alt="Remera Asuka">
+            <div class="card-body">
+              <h5 class="card-title">Remera: Asuka Langley</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/remera4.jpg" class="card-img-top" alt="Remera Gojo">
+            <div class="card-body">
+              <h5 class="card-title">Remera: Gojo Satoru</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/remera5.jpg" class="card-img-top" alt="Remera Rem">
+            <div class="card-body">
+              <h5 class="card-title">Remera: Rem</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/remera6.jpg" class="card-img-top" alt="Remera Lost">
+            <div class="card-body">
+              <h5 class="card-title">Remera: Lost in Paradise</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/buzo1.jpg" class="card-img-top" alt="Buzo sombrero de paja">
+            <div class="card-body">
+              <h5 class="card-title">Buzo: sombrero de paja</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/buzo2.jpg" class="card-img-top" alt="Buzo Legion">
+            <div class="card-body">
+              <h5 class="card-title">Buzo: Legion de Reconocimiento</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/buzo3.jpg" class="card-img-top" alt="Buzo Ryuk">
+            <div class="card-body">
+              <h5 class="card-title">Buzo: Ryuk</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/buzo4.jpg" class="card-img-top" alt="Buzo Eren">
+            <div class="card-body">
+              <h5 class="card-title">Buzo: Eren Jaeger</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/buzo5.jpg" class="card-img-top" alt="Buzo Nezuko">
+            <div class="card-body">
+              <h5 class="card-title">Buzo: Nezuko Kamado</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="../img/buzo6.jpg" class="card-img-top" alt="Buzo Shinobu">
+            <div class="card-body">
+              <h5 class="card-title">Buzo: Shinobu Kocho</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid pb-auto">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 mb-1 pt-3">
+          <h4 class="foot-title text-center">MITEKUDASAI</h4>
+          <h5 style="color: #F5DF4D; font-Weight: 300" class="text-center">Tienda Otaku</h5>
+          <h6 class="foot-text text-center">sigamos copartiendo juntos</h6>
+        </div>
+        <div class="col-lg-3 col-md-3 mb-1 pt-3">
+         <h5 class="foot-title">Navegacion:</h5>
+         <ul class="list-unstyled foot-text">
+           <li>Inicio</li>
+           <li>Remeras</li>
+           <li>Buzos</li>
+           <li>Accesorios</li>
+         </ul>
+		    </div>
+        <div class="col-lg-3 col-md-3 mb-1 pt-3">
+          <h5 class="foot-title">Medios de pago:</h5>
+          <ul class="list-unstyled foot-text">
+          <li>Targetas de Credito-Debito</li>
+          <li>Cuenta DNI</li>
+          <li>Uala</li> 
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 mb-1 pt-3">
+          <h5 class="foot-title">Seguinos en redes:</h5>
+          <ul id="redes" class="row list-unstyled foot-text">
+            <li class="col-3 foot-text">
+              <a
+              class=""
+              href="https://www.facebook.com/profile.php?id=100069642704426"
+              target="-blank"
+              ><i class="bi bi-facebook"></i></a
+              >
+            </li>
+            <li class="col-3">
+              <a 
+              class=""
+              href="https://www.instagram.com/mitekudasai.tandil/"
+              target="-blank"
+              ><i class="bi bi-instagram"></i></a
+              >              
+            </li>
+            <li class="col-3">
+              <a
+              class="" 
+              href="https://api.whatsapp.com/send?phone=2494529625&text=Hola, Nececito mas informacion!" 
+              target="_blank"
+              ><i class="bi bi-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div style="color: white;" class="col-12 text-center"> Copyright&copy; 2022 Mitekudasai </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.slim.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -1,64 +1,95 @@
-
 body {
-	color: black;
-	font-size: 16px;
-	background: url("../img/fd.jpg") round;
-	font-family: 'Syne', sans-serif;
+  color: #F5DF4D;
+  font-size: 16px;
+  background: white;
+  font-family: "Syne", sans-serif;
 }
 
 li {
-	text-decoration: none;
-}
-
-footer {
-	background: red;
-	float: bottom;
+  text-decoration: none;
 }
 
 /**HEADER**/
 #header-nav {
-	background-image: url("fondo.jpg");
+  background: #5F4B8B;
 }
 
 #nav-list {
-	font-size: 1.25em; 
+  font-size: 1.25em;
 }
 
 #phone {
-	font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 .navbar-brand {
-	padding-top: 0;
-	padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar-brand h1 {
-	color: gold;
-	font-size: 2em;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 3px 3px 3px #222;
-	margin-top: 0;
-	margin-bottom: 0;
-	line-height: .75;
+  color: gold;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.75;
 }
 
 .navbar-brand a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-@media (min-width: 576px)  {
-	#phone {
-		margin-bottom: 3px;
-	}
+button a {
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  background: #F5DF4D;
+}
+
+.dropdown-menu a:hover {
+  background: #5F4B8B;
+}
+@media (max-width: 576px) {
+  #phone {
+    margin-bottom: 8px;
+  }
+  .foot-title, .foot-text {
+    text-align: center;
+  }
+  #redes {
+    justify-content: center;
+  }
 }
 
 /**CONTENT**/
-div  a {
-	text-decoration: none;
-	color: black;
+.card {
+  background: #5F4B8B;
+  border-color: #F5DF4D;
 }
-div p {
-	margin-bottom: 3px;
+
+/**FOOTER**/
+footer {
+  background: #5F4B8B;  
+}
+.foot-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #F5DF4D;
+}
+
+.foot-text {
+	align-self: start;
+  font-size: 1em;
+	font-weight: 100;
+  color: #F5DF4D;
+}
+
+.foot-title a,
+.foot-text a {
+  text-decoration: none;
+  color: #F5DF4D;
 }
