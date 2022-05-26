@@ -21,9 +21,9 @@
 
   <body>
     <header>
-      <nav id="header-nav" class="navbar sticky-top navbar-expand-md pt-0">
+      <nav id="header-nav" class="navbar fixed-top navbar-expand-md pt-0">
         <div class="container-fluid" style="margin-left: 0">
-          <a href="index.html" class="navbar-brand mx-sm-auto">
+          <a href="index.html" class="navbar-brand mx-sm-auto me-3">
             <img
               src="img/logoo.png"
               alt="Mitekudasai logo"
@@ -64,16 +64,16 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item" href="#">Remeras</a></li>
-                  <li><a class="dropdown-item" href="#">Buzos</a></li>
-                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                  <li><a class="dropdown-item" href="#Remeras">Remeras</a></li>
+                  <li><a class="dropdown-item" href="#Buzos">Buzos</a></li>
+                  <li><a class="dropdown-item" href="#Accesorios">Accesorios</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#">Contacto</a>
               </li>
             </ul>
-            <button id="phone" class="btn btn-sm btn-outline-warning me-2" type="button">
+            <button id="phone" class="btn btn-outline-warning me-2" type="button">
               <a
                 class="nav-link"
                 href="https://api.whatsapp.com/send?phone=2494529625&text=Hola, Nececito mas informacion!" target="_blank"
@@ -81,28 +81,29 @@
             </button>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2"
+                class="form-control me-1"
                 type="search"
                 placeholder="Search"
-                aria-label="Search"
               />
               <button class="btn btn-outline-warning me-1" type="submit">
                 <i class="bi bi-search"></i>
               </button>
-              <button class="btn btn-sm btn-outline-warning me-1" type="button">
+            </form>
+            <div id="Account" class="btn-group" role="group" aria-label="Button group">
+              <button class="btn btn-outline-warning" type="button">
                 <a
                   class="nav-link "
                   href="#" target="_blank"
                   ><i class="bi bi-person-check-fill"></i></a>
               </button>
-              <button class="btn btn-sm btn-outline-warning me-1" type="button">
+              <button class="btn btn-outline-warning" type="button">
                 <a
                   class="nav-link"
                   href="#" target="_blank"
                   >
                   <i class="bi bi-cart-check-fill"></i></a>
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </nav>
@@ -111,7 +112,7 @@
     <div class="container">
       <div
         id="carouselExampleDark"
-        class="carousel carousel-dark slide"
+        class="carousel carousel-dark slide" data-bs-ride="carousel">
         data-bs-ride="false"
       >
         <div class="carousel-indicators">
@@ -137,22 +138,22 @@
           ></button>
         </div>
         <div class="carousel-inner justify-content-center">
-          <div class="carousel-item active">
-            <img src="img/logoo.png" class="d-block w-100" alt="Remera Naruto" />
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="img/remera1.jpg" class="d-block w-100" alt="Remera Naruto" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Remeras</h5>
               <p>Algodon premium, estampadas en serigrafia</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="img/logoo.png" class="d-block w-100" alt="Buzo Eren" />
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/remera4.jpg" class="d-block w-100" alt="Buzo Eren" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Buzos</h5>
               <p>Algodon premium con frizza, estampados en serigrafia</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/logoo.png" class="d-block w-100" alt="Buzo Nezuko" />
+            <img src="img/buzo3.jpg" class="d-block w-100" alt="Buzo Nezuko" />
             <div class="carousel-caption d-none d-md-block">
               <h5>Accesorios</h5>
               <p>sentite parte del mundo anime</p>
@@ -180,101 +181,89 @@
       </div>
     </div>
 
-    <div class="container-fluid mb-3">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center g-4">
+    <div class="container-fluid">
+      <div id="Remeras"></div>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 text-center g-4 my-3">
         <div class="col">
           <div class="card">
-            <img src="img/remera1.jpg" class="card-img-top" alt="Remera Nana">
+            <a href="img/remera1.jpg" target="_blank"><img src="img/remera1.jpg" class="card-img-top" alt="Remera Nana"></a>
             <div class="card-body">
-              <h5 class="card-title">Remera: Nana</h5>
+              <h5 class="card-title">Nana</h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/remera2.jpg" class="card-img-top" alt="Remera Yuuji">
+            <a href="img/remera2.jpg" target="_blank"><img src="img/remera2.jpg" class="card-img-top" alt="Remera Yuuji"></a>
             <div class="card-body">
-              <h5 class="card-title">Remera: Yuuji Itadori</h5>
+              <h5 class="card-title">Yuuji Itadori</h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/remera3.jpg" class="card-img-top" alt="Remera Asuka">
+            <a href="img/remera3.jpg" target="_blank"><img src="img/remera3.jpg" class="card-img-top" alt="Remera Asuka" ></a>
             <div class="card-body">
-              <h5 class="card-title">Remera: Asuka Langley</h5>
+              <h5 class="card-title">Asuka Langley</h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/remera4.jpg" class="card-img-top" alt="Remera Gojo">
+            <a href="img/remera4.jpg" target="_blank"><img src="img/remera4.jpg" class="card-img-top" alt="Remera Gojo"></a>
             <div class="card-body">
-              <h5 class="card-title">Remera: Gojo Satoru</h5>
+              <h5 class="card-title">Gojo Satoru</h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/remera5.jpg" class="card-img-top" alt="Remera Rem">
+            <a href="img/remera5.jpg" target="_blank"><img src="img/remera5.jpg" class="card-img-top" alt="Remera Rem"></a>
             <div class="card-body">
-              <h5 class="card-title">Remera: Rem</h5>
+              <h5 class="card-title">Rem</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="Buzos"></div>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-5 text-center g-4 my-3">
+        <div class="col">
+          <div class="card">
+            <a href="img/buzo1.jpg" target="_blank"><img src="img/buzo1.jpg" class="card-img-top" alt="Buzo sombrero de paja"></a>
+            <div class="card-body">
+              <h5 class="card-title">Sombrero de paja</h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/remera6.jpg" class="card-img-top" alt="Remera Lost">
+            <a href="img/buzo2.jpg" target="_blank"><img src="img/buzo2.jpg" class="card-img-top" alt="Buzo Legion"></a>
             <div class="card-body">
-              <h5 class="card-title">Remera: Lost in Paradise</h5>
+              <h5 class="card-title">Legion</h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/buzo1.jpg" class="card-img-top" alt="Buzo sombrero de paja">
+            <a href="img/buzo3.jpg" target="_blank"><img src="img/buzo3.jpg" class="card-img-top" alt="Buzo Ryuk"></a>
             <div class="card-body">
-              <h5 class="card-title">Buzo: sombrero de paja</h5>
+              <h5 class="card-title">Ryuk</h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/buzo2.jpg" class="card-img-top" alt="Buzo Legion">
+            <a href="img/buzo4.jpg" target="_blank"><img src="img/buzo4.jpg" class="card-img-top" alt="Buzo Eren"></a>
             <div class="card-body">
-              <h5 class="card-title">Buzo: Legion de Reconocimiento</h5>
+              <h5 class="card-title">Eren Jaeger</h5>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/buzo3.jpg" class="card-img-top" alt="Buzo Ryuk">
+            <a href="img/buzo5.jpg" target="_blank"><img src="img/buzo5.jpg" class="card-img-top" alt="Buzo Nezuko"></a>
             <div class="card-body">
-              <h5 class="card-title">Buzo: Ryuk</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/buzo4.jpg" class="card-img-top" alt="Buzo Eren">
-            <div class="card-body">
-              <h5 class="card-title">Buzo: Eren Jaeger</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/buzo5.jpg" class="card-img-top" alt="Buzo Nezuko">
-            <div class="card-body">
-              <h5 class="card-title">Buzo: Nezuko Kamado</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src=" img/buzo6.jpg" class="card-img-top" alt="Buzo Shinobu">
-            <div class="card-body">
-              <h5 class="card-title">Buzo: Shinobu Kocho</h5>
+              <h5 class="card-title">Nezuko Kamado</h5>
             </div>
           </div>
         </div>
@@ -291,10 +280,9 @@
         <div class="col-lg-3 col-md-3 col-sm-4 mb-1 pt-3">
          <h5 class="foot-title">Navegacion:</h5>
          <ul class="list-unstyled foot-text">
-           <li>Inicio</li>
-           <li>Remeras</li>
-           <li>Buzos</li>
-           <li>Accesorios</li>
+           <li><a href="#Remeras">Remeras</a></li>
+           <li><a href="#Buzos">Buzos</a></li>
+           <li><a href="#">Accesorios</a></li>
          </ul>
 		    </div>
         <div class="col-lg-3 col-md-3 col-sm-4 mb-1 pt-3">
