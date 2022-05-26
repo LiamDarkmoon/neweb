@@ -57,6 +57,7 @@ button a {
 .dropdown-menu a:hover {
   background: #5F4B8B;
 }
+
 @media (max-width: 576px) {
   #phone {
     margin-bottom: 8px;
@@ -66,6 +67,12 @@ button a {
   }
   #redes {
     justify-content: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #phone {
+    margin-bottom: 8px; 
   }
 }
 
