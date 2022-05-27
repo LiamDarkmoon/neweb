@@ -93,6 +93,15 @@ button a {
   border: 2px solid #5F4B8B;
 }
 
+#Ofertas {
+  font-size: 2em;
+  font-weight: 700;
+  color: #F5DF4D;
+  background: #5F4B8B;
+  text-align: center;
+  padding: 8px;
+}
+
 /**FOOTER**/
 footer {
   background: #5F4B8B;  
