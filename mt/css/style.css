@@ -6,7 +6,7 @@
 body {
   color: #F5DF4D;
   font-size: 16px;
-  background-image: url("/img/narutofd.jpg") round;
+  background: url("/img/narutofd.jpg");
   font-family: "Syne", sans-serif;
 }
 
