@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html id="main">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mitekudasai</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar fixed-top navbar-expand-md pt-0">
+        <div class="container-fluid" style="margin-left: 0">
+          <a href="index.html" class="navbar-brand mx-sm-auto me-3">
+            <img
+              src="img/logoo.png"
+              alt="Mitekudasai logo"
+              width="80"
+              height="57"
+            />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul id="nav-list" class="navbar-nav me-auto ms-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Productos
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="Remeras.html">Remeras</a></li>
+                  <li><a class="dropdown-item" href="Buzos.html">Buzos</a></li>
+                  <li><a class="dropdown-item" href="Accesorios.html">Accesorios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contacto</a>
+              </li>
+            </ul>
+            <button id="phone" class="btn btn-outline-warning me-2" type="button">
+              <a
+                class="nav-link"
+                href="https://api.whatsapp.com/send?phone=2494529625&text=Hola, Nececito mas informacion!" target="_blank"
+                ><i class="bi bi-whatsapp"></i> whatsapp </a>
+            </button>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-1"
+                type="search"
+                placeholder="Search"
+              />
+              <button class="btn btn-outline-warning me-1" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <div id="Account" class="btn-group" role="group" aria-label="Button group">
+              <button class="btn btn-outline-warning" type="button">
+                <a
+                  class="nav-link "
+                  href="#" target="_blank"
+                  ><i class="bi bi-person-check-fill"></i></a>
+              </button>
+              <button class="btn btn-outline-warning" type="button">
+                <a
+                  class="nav-link"
+                  href="#" target="_blank"
+                  >
+                  <i class="bi bi-cart-check-fill"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="Inicio" class="container">
+      <div></div>
+      <div class="center">
+        <h1>Login</h1>
+        <form action="" method="post">
+          <div class="txt__field">
+            <input type="email" name="email" required>
+            <span></span>
+            <label>Username</label>
+          </div>
+          <div class="txt__field">
+            <input type="password" name="password" required>
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass">Forget Password?</div>
+          <input name="submit" type="submit" value="Login">
+          <div class="signup__link">
+            Not a Member ? <a href="#">Signup</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="container-fluid pb-auto">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 mb-1 pt-3">
+          <h4 class="foot-title text-center">MITEKUDASAI</h4>
+          <h5 style="color: #F5DF4D; font-Weight: 300" class="text-center">Tienda Otaku</h5>
+          <h6 class="foot-text text-center"></h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 mb-1 pt-3">
+         <h5 class="foot-title">Navegacion:</h5>
+         <ul class="list-unstyled foot-text">
+           <li><a href="Remeras.html">Remeras</a></li>
+           <li><a href="Buzos.html">Buzos</a></li>
+           <li><a href="#">Accesorios</a></li>
+         </ul>
+		    </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 mb-1 pt-3">
+          <h5 class="foot-title">Medios de pago:</h5>
+          <ul class="list-unstyled foot-text">
+          <li>Targetas de Credito-Debito</li>
+          <li>Cuenta DNI</li>
+          <li>Uala</li> 
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 mb-1 pt-3">
+          <h5 class="foot-title">Seguinos en redes:</h5>
+          <ul id="redes" class="row list-unstyled foot-text">
+            <li class="col-3 foot-text">
+              <a
+              class=""
+              href="https://www.facebook.com/profile.php?id=100069642704426"
+              target="-blank"
+              ><i class="bi bi-facebook"></i></a
+              >
+            </li>
+            <li class="col-3">
+              <a 
+              class=""
+              href="https://www.instagram.com/mitekudasai.tandil/"
+              target="-blank"
+              ><i class="bi bi-instagram"></i></a
+              >              
+            </li>
+            <li class="col-3">
+              <a
+              class="" 
+              href="https://api.whatsapp.com/send?phone=2494529625&text=Hola, Nececito mas informacion!" 
+              target="_blank"
+              ><i class="bi bi-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div style="color: white;" class="col-12 text-center"> Copyright&copy; 2022 Mitekudasai </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.slim.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
