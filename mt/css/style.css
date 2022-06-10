@@ -62,39 +62,6 @@ button a {
   color:#5F4B8B;  
 }
 
-@media (max-width: 576px) {
-  #phone {
-    margin-bottom: 8px;
-  }
-  .foot-title, .foot-text {
-    text-align: center;
-  }
-  #redes {
-    justify-content: center;
-  }
-  #Account{
-    margin-top: 8px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  #phone {
-    margin-bottom: 8px; 
-  }
-  #redes {
-    justify-content: center;
-  }
-  .foot-text {
-    text-align:center;
-  }
-  .foot-title {
-    text-align: center;
-  }
-  #Account{
-    margin-top: 8px;
-  }
-}
-
 /**CONTENT**/
 #Inicio {
   position: relative;
@@ -251,13 +218,9 @@ button a {
 
 /**LOGIN**/
 .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 15%);
-  width: 29vw;
   background: #F5DF4D;
   border-radius: 10px;
+  margin-top: 80px;
 }
 
 .center h1 {
@@ -363,6 +326,7 @@ input[type="submit"]:hover {
 /**FOOTER**/
 footer {
   background: #5F4B8B;  
+  margin-top: 16px;
 }
 .foot-title {
   font-size: 1.5em;
@@ -381,4 +345,45 @@ footer {
 .foot-text a {
   text-decoration: none;
   color: #F5DF4D;
+}
+
+
+/**QUERYS**/
+@media (max-width: 576px) {
+  #phone {
+    margin-bottom: 8px;
+  }
+  #redes {
+    justify-content: center;
+  }
+  #Account{
+    margin-top: 8px;
+  }
+  .foot-title, .foot-text {
+    text-align: center;
+  }
+  .center{
+    margin-top: 65px;
+  }
+  footer {
+    margin: 0!important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #phone {
+    margin-bottom: 8px; 
+  }
+  #redes {
+    justify-content: center;
+  }
+  .foot-text {
+    text-align:center;
+  }
+  .foot-title {
+    text-align: center;
+  }
+  #Account{
+    margin-top: 8px;
+  }
 }
