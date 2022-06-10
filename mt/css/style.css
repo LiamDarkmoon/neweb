@@ -41,25 +41,25 @@ img {
   background: none;
 }
 
-#navbarNavDropdown a {
-  text-decoration: none;
+#navbarNavDropdown .dropdown-menu, 
+.dropdown-menu a {
+  color: #F5DF4D;
+  border: none;
+  border-radius: 0;
+  background: #5F4B8B;
+  width: 100%;
+}
+#navbarNavDropdown .dropdown-menu a:hover {
+  background: #F5DF4D;
+  color:#5F4B8B; 
+}
+
+#navbarNavDropdown li a {
+  color: #F5DF4D;
 }
 
 button a {
   text-decoration: none;
-}
-
-.dropdown-menu {
-  border: none;
-  border-radius: 0;
-  background: #5F4B8B;
-  color:#F5DF4D;
-  width: 100%;
-}
-
-.dropdown-menu a:hover {
-  background: #F5DF4D;
-  color:#5F4B8B;  
 }
 
 /**CONTENT**/
@@ -87,7 +87,7 @@ button a {
 .cart-button {
   position: relative;
   padding: 10px;
-  width: 212px;
+  width: 150px;
   height:42px;
   border: 0;
   box-shadow: 0 0 5px 3px #23193a;
@@ -206,8 +206,6 @@ button a {
   }
 }
 
-
-
 #Ofertas {
   font-size: 2em;
   font-weight: 700;
@@ -219,7 +217,7 @@ button a {
 /**LOGIN**/
 .center {
   background: #F5DF4D;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 80px;
 }
 
