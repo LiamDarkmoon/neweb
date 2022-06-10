@@ -15,6 +15,9 @@ body {
 li {
   text-decoration: none;
 }
+img {
+  background: url("../img/MK.jpg");
+}
 
 /**HEADER**/
 #header-nav {
@@ -34,6 +37,10 @@ li {
   padding-bottom: 0;
 }
 
+#LOGO {
+  background: none;
+}
+
 #navbarNavDropdown a {
   text-decoration: none;
 }
@@ -43,13 +50,16 @@ button a {
 }
 
 .dropdown-menu {
-  background: #F5DF4D;
-  color:#5F4B8B;
+  border: none;
+  border-radius: 0;
+  background: #5F4B8B;
+  color:#F5DF4D;
+  width: 100%;
 }
 
 .dropdown-menu a:hover {
-  background: #5F4B8B;
-  color:#F5DF4D;  
+  background: #F5DF4D;
+  color:#5F4B8B;  
 }
 
 @media (max-width: 576px) {
@@ -94,6 +104,7 @@ button a {
   display: block;
   background: #5F4B8B;
   border: 2px solid #5F4B8B;
+  border-radius: 5px;
   z-index: 1;
 }
 .card:hover {
@@ -109,10 +120,9 @@ button a {
 .cart-button {
   position: relative;
   padding: 10px;
-  width: 150px;
-  height:40px;
+  width: 212px;
+  height:42px;
   border: 0;
-  border-radius: 10px;
   box-shadow: 0 0 5px 3px #23193a;
   background-color: #F5DF4D;
   cursor: pointer;
