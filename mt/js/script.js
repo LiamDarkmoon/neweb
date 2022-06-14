@@ -1,12 +1,10 @@
 let root = document.documentElement;
 const checkbox = document.getElementById('checkbox');
-let cs = '#5f4b8b'
 
 function toggle () {
     let color = getComputedStyle(root);
     var theme = color.getPropertyValue('--main-color');
     if (theme === '#5f4b8b') {
-        console.log('asdasdasdasdasd')
         root.style.setProperty('--main-color', '#f5df4d')
         root.style.setProperty('--secondary-color', '#5f4b8b')
     } else if (theme === '#f5df4d') {

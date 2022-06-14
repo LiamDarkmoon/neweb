@@ -268,7 +268,7 @@ img {
 .center h1 {
   color: var(--main-color);
   text-align: center;
-  padding:0 0 20px 0;
+  padding:20px 0;
   border-bottom: 1px solid var(--secondary-color);
 }
 
@@ -353,7 +353,7 @@ input[type="submit"]:hover {
 }
 
 .signup__link {
-  margin: 30px 0;
+  margin: 50px 0;
   text-align: center;
   color: black;
 }
@@ -412,7 +412,7 @@ input[type="submit"]:hover {
     text-align: center;
   }
   .center{
-    margin-top: 65px;
+    margin-top: 75px;
   }
   #foot {
     height: 468px;
