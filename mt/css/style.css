@@ -11,12 +11,19 @@
 }
 
 body {
+  position: relative;
   color: var(--secondary-color);
   font-size: 16px;
   background: url("../img/narutofd.jpg") round;
   font-family: "Syne", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   transition: 0.5s linear;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 190px; /* Set same as footer's height */
 }
 
 img {
@@ -65,6 +72,10 @@ img {
   color: var(--main-color);
 }
 
+.form-switch {
+  padding-left: 1.5em;
+}
+
 .form-check-input {
   background-color: var(--secondary-color);
   color: var(--main-color);
@@ -81,6 +92,13 @@ img {
   color: var(--main-color);
   border: var(--secondary-color);
 }
+
+.btn:active,
+.btn:focus {
+  background: var(--secondary-color);
+  color: var(--main-color);
+}
+
 /**CONTENT**/
 #Inicio {
   position: relative;
@@ -234,9 +252,16 @@ img {
 }
 
 /**LOGIN**/
+#form {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
 .center {
   background: var(--secondary-color);
   border-radius: 5px;
+  height: 500px;
   margin-top: 80px;
 }
 
@@ -344,10 +369,12 @@ input[type="submit"]:hover {
 
 /**FOOTER**/
 #foot {
-  position: static;
+  position: absolute;
   bottom: 0;
-  background-color: var(--main-color);  
-  margin-top: 16px;
+  left: 0;
+  right: 0;
+  background-color: var(--main-color);
+  height: 190px;
 }
 
 .foot-title {
@@ -387,8 +414,12 @@ input[type="submit"]:hover {
   .center{
     margin-top: 65px;
   }
-  footer {
+  #foot {
+    height: 468px;
     margin: 0!important;
+  }
+  body::after {
+    height: 468px;
   }
 }
 
@@ -407,5 +438,12 @@ input[type="submit"]:hover {
   }
   #Account{
     margin-top: 8px;
+  }
+  #foot {
+    height: 330px;
+    margin: 0!important;
+  }
+  body::after {
+    height: 330px;
   }
 }
