@@ -1,18 +1,22 @@
-let root = document.querySelector(':root');
-let color = '#5f4b8b';
-console.log(color);
+let root = document.documentElement;
+const checkbox = document.getElementById('checkbox');
+let cs = '#5f4b8b'
 
-root.addEventListener("change", () => {
-  if (color === '#5f4b8b') {
-    root.style.setProperty('--main-color', '#f5df4d');
-    root.style.setProperty('--secondary-color', '#5f4b8b');
-    color = '#f5df4d';
-  } else if (color === '#f5df4d') {
-    root.style.setProperty('--main-color', '#5f4b8b');
-    root.style.setProperty('--secondary-color', '#f5df4d');
-    color = '#5f4b8b';
-  }
-});
+function toggle () {
+    let color = getComputedStyle(root);
+    var theme = color.getPropertyValue('--main-color');
+    if (theme === '#5f4b8b') {
+        console.log('asdasdasdasdasd')
+        root.style.setProperty('--main-color', '#f5df4d')
+        root.style.setProperty('--secondary-color', '#5f4b8b')
+    } else if (theme === '#f5df4d') {
+        root.style.setProperty('--main-color', '#5f4b8b')
+        root.style.setProperty('--secondary-color', '#f5df4d')
+    }
+    console.log(theme);
+}
+
+checkbox.addEventListener("change", toggle);
 
 const cartButtons = document.querySelectorAll(".cart-button");
 

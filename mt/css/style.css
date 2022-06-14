@@ -1,5 +1,5 @@
 :root {
-  --main-color: #5f4b8b;
+  --main-color:#5f4b8b;
   --secondary-color: #f5df4d;
   --complement-color: #939597;
 }
@@ -13,23 +13,11 @@
 body {
   color: var(--secondary-color);
   font-size: 16px;
-  background: url("/img/narutofd.jpg");
+  background: url("../img/narutofd.jpg") round;
   font-family: "Syne", sans-serif;
   height: 100vh;
-  transition: 0.2s linear;
+  transition: 0.5s linear;
 }
-
-body.sun {
-  color: var(--main-color);
-}
-
-body.sun #header-nav {
-  background: var(--secondary-color);
-}
-body.sun #navbarNavDropdown li a {
-  color: var(--main-color);
-}
-
 
 img {
   background: url("../img/MK.jpg");
@@ -67,6 +55,32 @@ img {
   color: var(--secondary-color);
 }
 
+#header-nav .btn-outline-warning {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+#header-nav .btn-outline-warning:hover {
+  background: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.form-check-input {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: var(--secondary-color);
+}
+
+.form-check-input:focus {
+  border: var(--secondary-color);
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: var(--secondary-color);
+}
 /**CONTENT**/
 #Inicio {
   position: relative;
@@ -329,10 +343,13 @@ input[type="submit"]:hover {
 }
 
 /**FOOTER**/
-footer {
-  background: var(--main-color);  
+#foot {
+  position: static;
+  bottom: 0;
+  background-color: var(--main-color);  
   margin-top: 16px;
 }
+
 .foot-title {
   font-size: 1.5em;
   font-weight: 600;
