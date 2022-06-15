@@ -15,6 +15,7 @@ function toggle () {
 }
 
 checkbox.addEventListener("change", toggle);
+checkbox.addEventListener("ch")
 
 const cartButtons = document.querySelectorAll(".cart-button");
 
