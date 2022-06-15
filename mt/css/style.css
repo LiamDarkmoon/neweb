@@ -448,3 +448,9 @@ input[type="submit"]:hover {
     height: 330px;
   }
 }
+
+@media (max-height: 576px) and (orientation: landscape) {
+  #form {
+    height: 900px;
+  }
+}
