@@ -35,8 +35,7 @@ img {
   background: var(--main-color);
 }
 
-#nav-list,
-#phone {
+#nav-list {
   font-size: 1.25em;
 }
 
@@ -102,6 +101,7 @@ img {
 /**CONTENT**/
 #Inicio {
   position: relative;
+  margin-top: 75px;
 }
 
 .card {
@@ -124,7 +124,7 @@ img {
 .cart-button {
   position: relative;
   padding: 8px 32px;
-  width: 125px;
+  width: 140px;
   height:42px;
   border: 0;
   border-radius: 5px;
@@ -377,16 +377,18 @@ input[type="submit"]:hover {
   height: 190px;
 }
 
+#copy {
+  color: var(--complement-color);
+}
+
 .foot-title {
-  font-size: 1.5em;
   font-weight: 600;
   color: var(--secondary-color);
 }
 
 .foot-text {
 	align-self: start;
-  font-size: 1em;
-	font-weight: 100;
+  font-weight: 100;
   color: var(--secondary-color);
 }
 
@@ -399,6 +401,9 @@ input[type="submit"]:hover {
 
 /**QUERYS**/
 @media (max-width: 576px) {
+  #foot {
+    height: 500px;
+  }
   #phone {
     margin-bottom: 8px;
   }
@@ -414,12 +419,8 @@ input[type="submit"]:hover {
   .center{
     margin-top: 75px;
   }
-  #foot {
-    height: 468px;
-    margin: 0!important;
-  }
   body::after {
-    height: 468px;
+    height: 500px;
   }
 }
 
